@@ -23,8 +23,12 @@ export default function RootLayout({
 				<BackgroundVideo />
 				<header className='p-4 mx-auto max-w-screen-lg flex items-center'>
 					<Link href='/'>
-						<h1 className='flex items-center text-xl text-tertiary font-bold tracking-widest gap-2'>
-							<div className='w-10 h-10 rounded-full bg-cta'></div>
+						<h1 className='flex items-center text-2xl text-tertiary font-bold tracking-widest gap-2'>
+							<img
+								src='media/logo.png'
+								className='w-16 h-16 rounded-full'
+								alt=''
+							/>
 							Bible Arch
 						</h1>
 					</Link>

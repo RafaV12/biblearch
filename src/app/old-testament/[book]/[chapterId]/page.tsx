@@ -4,6 +4,8 @@ import { usePathname } from 'next/navigation';
 
 import books from '../../../../../public/old-testament/books';
 
+import ToolBar from '@/app/components/ToolBar';
+
 import { Chapter, Book, BookShortVersion } from '@/app/types';
 
 export default function Page({ params }: { params: { chapterId: string } }) {
@@ -25,7 +27,7 @@ export default function Page({ params }: { params: { chapterId: string } }) {
 	);
 
 	return chapter ? (
-		<main className='py-10 px-4 min-h-screen mx-auto max-w-screen-lg flex flex-col md:items-center '>
+		<main className='pt-10 pb-28 px-4 min-h-screen mx-auto max-w-screen-lg flex flex-col md:items-center '>
 			<h1 className='mb-12 text-3xl uppercase font-semibold text-tertiary tracking-widest md:text-5xl'>
 				{bookName.replace('-', ' ')}
 			</h1>
@@ -44,6 +46,8 @@ export default function Page({ params }: { params: { chapterId: string } }) {
 					))}
 				</ul>
 			</div>
+
+			<ToolBar amountOfChapters={book.chapters.length} />
 		</main>
 	) : (
 		<>Chapter Not fund</>
