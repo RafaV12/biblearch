@@ -27,10 +27,10 @@ export default function Page({ params }: { params: { chapterId: string } }) {
 	return chapter ? (
 		<main className='py-10 px-4 min-h-screen mx-auto max-w-screen-lg flex flex-col md:items-center '>
 			<h1 className='mb-12 text-3xl uppercase font-semibold text-tertiary tracking-widest md:text-5xl'>
-				{bookName}
+				{bookName.replace('-', ' ')}
 			</h1>
 
-			<h2 className='mb-12 text-2xl uppercase font-semibold self-start text-secondary tracking-widest'>
+			<h2 className='mb-8 text-2xl uppercase font-semibold self-start text-secondary tracking-widest'>
 				{`Chapter ${chapter.id}`}
 			</h2>
 

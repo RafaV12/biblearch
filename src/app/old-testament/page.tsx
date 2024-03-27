@@ -13,12 +13,12 @@ const oldTestamentBooksByTitle: BookGroup[] = [
 			'Joshua',
 			'Judges',
 			'Ruth',
-			'1 Samuel',
-			'2 Samuel',
-			'1 Kings',
-			'2 Kings',
-			'1 Chronicles',
-			'2 Chronicles',
+			'1-Samuel',
+			'2-Samuel',
+			'1-Kings',
+			'2-Kings',
+			'1-Chronicles',
+			'2-Chronicles',
 			'Ezra',
 			'Nehemiah',
 			'Esther',
@@ -67,7 +67,7 @@ export default function Page() {
 							{book.books.map((innerBook) => (
 								<Link key={innerBook} href={`/old-testament/${innerBook}`}>
 									<li className='w-fit text-primary text-lg hover:text-cta cursor-pointer hover:underline'>
-										{innerBook}
+										{innerBook.replace('-', ' ')}
 									</li>
 								</Link>
 							))}

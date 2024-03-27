@@ -63,7 +63,7 @@ const oldTestamentBooks = [
 		versesPerChapter: [22, 23, 18, 22],
 	},
 	{
-		name: '1 Samuel',
+		name: '1-Samuel',
 		chapters: 31,
 		versesPerChapter: [
 			28, 36, 21, 22, 12, 21, 17, 22, 27, 27, 28, 25, 44, 23, 25, 12, 25, 11,
@@ -71,7 +71,7 @@ const oldTestamentBooks = [
 		],
 	},
 	{
-		name: '2 Samuel',
+		name: '2-Samuel',
 		chapters: 24,
 		versesPerChapter: [
 			27, 32, 39, 12, 25, 23, 29, 18, 13, 19, 27, 31, 39, 33, 37, 23, 29, 33,
@@ -79,7 +79,7 @@ const oldTestamentBooks = [
 		],
 	},
 	{
-		name: '1 Kings',
+		name: '1-Kings',
 		chapters: 22,
 		versesPerChapter: [
 			53, 46, 28, 34, 18, 38, 51, 66, 28, 29, 43, 33, 34, 31, 34, 34, 24, 46,
@@ -87,7 +87,7 @@ const oldTestamentBooks = [
 		],
 	},
 	{
-		name: '2 Kings',
+		name: '2-Kings',
 		chapters: 25,
 		versesPerChapter: [
 			18, 25, 27, 44, 27, 33, 20, 29, 37, 36, 21, 21, 25, 29, 38, 20, 41, 37,
@@ -95,7 +95,7 @@ const oldTestamentBooks = [
 		],
 	},
 	{
-		name: '1 Chronicles',
+		name: '1-Chronicles',
 		chapters: 29,
 		versesPerChapter: [
 			54, 55, 24, 43, 41, 66, 40, 40, 44, 14, 47, 41, 14, 17, 29, 43, 27, 17,
@@ -103,7 +103,7 @@ const oldTestamentBooks = [
 		],
 	},
 	{
-		name: '2 Chronicles',
+		name: '2-Chronicles',
 		chapters: 36,
 		versesPerChapter: [
 			17, 18, 17, 22, 14, 42, 22, 18, 31, 19, 23, 16, 22, 15, 19, 14, 19, 34,

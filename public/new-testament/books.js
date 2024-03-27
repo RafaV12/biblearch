@@ -46,14 +46,14 @@ const books = [
 		],
 	},
 	{
-		name: '1 Corinthians',
+		name: '1-Corinthians',
 		chapters: 16,
 		versesPerChapter: [
 			31, 16, 23, 21, 13, 20, 40, 13, 27, 33, 34, 31, 13, 40, 58, 24,
 		],
 	},
 	{
-		name: '2 Corinthians',
+		name: '2-Corinthians',
 		chapters: 13,
 		versesPerChapter: [24, 17, 18, 18, 21, 18, 16, 24, 15, 18, 33, 21, 14],
 	},
@@ -78,22 +78,22 @@ const books = [
 		versesPerChapter: [29, 23, 25, 18],
 	},
 	{
-		name: '1 Thessalonians',
+		name: '1-Thessalonians',
 		chapters: 5,
 		versesPerChapter: [10, 20, 13, 18, 28],
 	},
 	{
-		name: '2 Thessalonians',
+		name: '2-Thessalonians',
 		chapters: 3,
 		versesPerChapter: [12, 17, 18],
 	},
 	{
-		name: '1 Timothy',
+		name: '1-Timothy',
 		chapters: 6,
 		versesPerChapter: [20, 15, 16, 16, 25, 21],
 	},
 	{
-		name: '2 Timothy',
+		name: '2-Timothy',
 		chapters: 4,
 		versesPerChapter: [18, 26, 17, 22],
 	},
@@ -118,27 +118,27 @@ const books = [
 		versesPerChapter: [27, 26, 18, 17, 20],
 	},
 	{
-		name: '1 Peter',
+		name: '1-Peter',
 		chapters: 5,
 		versesPerChapter: [25, 25, 22, 19, 14],
 	},
 	{
-		name: '2 Peter',
+		name: '2-Peter',
 		chapters: 3,
 		versesPerChapter: [21, 22, 18],
 	},
 	{
-		name: '1 John',
+		name: '1-John',
 		chapters: 5,
 		versesPerChapter: [10, 29, 24, 21, 21],
 	},
 	{
-		name: '2 John',
+		name: '2-John',
 		chapters: 1,
 		versesPerChapter: [13],
 	},
 	{
-		name: '3 John',
+		name: '3-John',
 		chapters: 1,
 		versesPerChapter: [14],
 	},

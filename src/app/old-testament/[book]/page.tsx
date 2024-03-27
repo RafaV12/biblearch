@@ -13,10 +13,12 @@ export default function Page({ params }: { params: { book: string } }) {
 	return (
 		<main className='py-10 px-4 min-h-screen mx-auto max-w-screen-lg flex flex-col md:items-center'>
 			<h1 className='mb-12 text-3xl uppercase font-semibold text-tertiary tracking-widest md:text-5xl'>
-				{params.book}
+				{params.book.replace('-', ' ')}
 			</h1>
 
-			<h2 className='mb-6 self-start text-2xl text-secondary'>Chapters</h2>
+			<h2 className='mb-8 text-2xl uppercase font-semibold self-start text-secondary tracking-widest'>
+				Chapters
+			</h2>
 			<div className='flex flex-wrap gap-x-10 gap-y-8'>
 				{book.chapters.map((chapter: Chapter) => (
 					<Link
