@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--foreground-rgb: 0, 0, 0;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--foreground-rgb: 255, 255, 255;
+		--background-start-rgb: 0, 0, 0;
+		--background-end-rgb: 0, 0, 0;
+	}
+}
+
+body {
+	/* https://i.pinimg.com/originals/83/1e/4d/831e4d553d4963470b058c26ac68d4ce.jpg */
+	/* background-image: url('https://static.vecteezy.com/system/resources/previews/006/894/836/original/clear-sky-background-abstract-blue-sky-for-outdoor-background-vector.jpg'); */
+	background-color: white;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#myVideo {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	z-index: -40;
+}
+
+@layer utilities {
+	.text-balance {
+		text-wrap: balance;
+	}
+}
+
+@media (min-aspect-ratio: 16/9) {
+	#myVideo {
+		width: 100%;
+		height: auto;
+	}
+}
+@media (max-aspect-ratio: 16/9) {
+	#myVideo {
+		width: 100%;
+		height: 100%;
+		padding: 0;
+	}
+}
+
+video {
+	object-fit: fill;
+}
