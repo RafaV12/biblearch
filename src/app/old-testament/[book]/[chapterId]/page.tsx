@@ -36,10 +36,10 @@ export default function Page({ params }: { params: { chapterId: string } }) {
 
 			<div className='flex flex-col gap-x-10 gap-y-8 md:flex-row md:flex-wrap'>
 				<ul className='flex flex-col gap-y-4'>
-					{chapter.verses.map((id) => (
-						<li key={id.id} className='flex gap-x-2 text-white'>
-							<span className='-mt-0.5 text-primary'>{id.id}</span>
-							<p className='text-lg text-primary'>{id.text}</p>
+					{chapter.verses.map((verse) => (
+						<li key={verse.id} className='flex gap-x-2 text-white'>
+							<span className='-mt-0.5 text-primary'>{verse.id}</span>
+							<p className='text-lg text-primary'>{verse.text}</p>
 						</li>
 					))}
 				</ul>
