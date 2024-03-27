@@ -1,7 +1,7 @@
 export default function VideoBackground() {
 	return (
 		<>
-			<video autoPlay muted loop id='myVideo'>
+			<video className='hidden lg:block' autoPlay muted loop id='myVideo'>
 				<source
 					media='(min-width: 2000px)'
 					src='large.webm'

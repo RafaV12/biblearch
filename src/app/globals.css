@@ -17,8 +17,7 @@
 }
 
 body {
-	/* https://i.pinimg.com/originals/83/1e/4d/831e4d553d4963470b058c26ac68d4ce.jpg */
-	/* background-image: url('https://static.vecteezy.com/system/resources/previews/006/894/836/original/clear-sky-background-abstract-blue-sky-for-outdoor-background-vector.jpg'); */
+	background-image: url('https://i.pinimg.com/originals/83/1e/4d/831e4d553d4963470b058c26ac68d4ce.jpg');
 	background-color: white;
 	background-position: center;
 	background-size: cover;
