@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import { Book, BookShortVersion, Chapter } from '@/app/types';
+import { BookShortVersion } from '@/app/types';
 
 export default function Page({
 	params,
