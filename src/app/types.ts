@@ -6,7 +6,10 @@ export interface Book {
 export interface BookShortVersion {
 	name: string;
 	chapters: number;
-	versesPerChapter: number[];
+	versesPerChapter: {
+		id: string;
+		amountOfVerses: number
+	}[];
 }
 
 export interface BookGroup {
@@ -22,4 +25,9 @@ export interface Verse {
 export interface Chapter {
 	id: string;
 	verses: Verse[];
+}
+
+export interface Bookmark {
+	title: string;
+	url: string;
 }

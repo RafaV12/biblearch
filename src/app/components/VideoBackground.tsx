@@ -12,7 +12,6 @@ export default function VideoBackground() {
 					src='media/clouds.mp4'
 					type='video/mp4'
 				/>
-				<source src='media/clouds-mobile.mp4' type='video/mp4' />
 			</video>
 			<div className='fixed top-0 left-0 -z-40 bg-white bg-opacity-80 h-screen w-full'></div>
 		</>

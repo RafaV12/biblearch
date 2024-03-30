@@ -4,6 +4,8 @@ import { Alegreya } from 'next/font/google';
 import './globals.css';
 
 import BackgroundVideo from './components/VideoBackground';
+import Bookmarks from './components/icons/BookmarksIcon';
+import SearchIcon from './components/icons/SearchIcon';
 
 const alegreya = Alegreya({ subsets: ['latin'] });
 
@@ -21,55 +23,32 @@ export default function RootLayout({
 		<html lang='en'>
 			<body className={alegreya.className}>
 				<BackgroundVideo />
-				<header className='p-4 mx-auto max-w-screen-lg flex items-center'>
+				<header className='p-4 mx-auto max-w-screen-lg flex items-center justify-between'>
 					<Link href='/'>
 						<h1 className='flex items-center text-2xl text-tertiary font-bold tracking-widest gap-2'>
 							<img
-								src='media/logo.png'
+								src='/media/logo.png'
 								className='w-16 h-16 rounded-full'
 								alt=''
 							/>
 							Bible Arch
 						</h1>
 					</Link>
-					<nav className='hidden lg:block lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2'>
-						<ul className='flex items-center gap-8 text-secondary font-semibold text-lg'>
+					<nav className=''>
+						<ul className='flex items-center gap-4 text-secondary font-semibold text-lg'>
 							<li>
-								<Link href='/'>Home</Link>
+								<Link href={'/'}>
+									<SearchIcon />
+								</Link>
 							</li>
 							<li>
-								<a href=''>Favorites</a>
-							</li>
-							<li>
-								<a href=''>Bookmarked</a>
+								<Link href={'/bookmarks'}>
+									<Bookmarks />
+								</Link>
 							</li>
 						</ul>
 					</nav>
 				</header>
-				{/* mobile menu */}
-				<ul className='p-4 border-b-2 hidden'>
-					<li>
-						<a href=''>Home</a>
-					</li>
-					<li>
-						<a href=''>Home</a>
-					</li>
-					<li>
-						<a href=''>Home</a>
-					</li>
-					<li>
-						<a href=''>Home</a>
-					</li>
-					<li>
-						<a href=''>Home</a>
-					</li>
-					<li>
-						<a href=''>Home</a>
-					</li>
-					<li>
-						<a href=''>Home</a>
-					</li>
-				</ul>
 
 				{children}
 			</body>
