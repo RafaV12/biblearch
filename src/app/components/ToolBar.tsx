@@ -17,9 +17,8 @@ export default function ToolBar({ amountOfChapters }: ToolBarProps) {
 	const baseUrl = pathname.split('/').slice(0, -1).join('/');
 	const currentChapter = pathname.split('/').pop();
 	const bookmark = {
-		// Genesis 1
+		// e.g: Genesis 1
 		title: pathname.split('/').slice(2, 4).join('/').replace('/', ' '),
-		// Genesis/1
 		url: pathname,
 	};
 
@@ -32,9 +31,11 @@ export default function ToolBar({ amountOfChapters }: ToolBarProps) {
 					title='previous chapter'
 					disabled={Number(currentChapter) === 1}
 					className='p-2 border rounded-lg'
-					onClick={() =>
-						router.push(`${baseUrl + '/' + (Number(currentChapter) - 1)}`)
-					}
+					onClick={() => {
+						if (Number(currentChapter) > 1) {
+							router.push(`${baseUrl + '/' + (Number(currentChapter) - 1)}`);
+						}
+					}}
 				>
 					<LeftArrowIcon />
 				</button>
@@ -47,9 +48,11 @@ export default function ToolBar({ amountOfChapters }: ToolBarProps) {
 					title='next chapter'
 					disabled={Number(currentChapter) === amountOfChapters}
 					className='p-2 border rounded-lg'
-					onClick={() =>
-						router.push(`${baseUrl + '/' + (Number(currentChapter) + 1)}`)
-					}
+					onClick={() => {
+						if (Number(currentChapter) < amountOfChapters) {
+							router.push(`${baseUrl + '/' + (Number(currentChapter) + 1)}`);
+						}
+					}}
 				>
 					<RightArrowIcon />
 				</button>

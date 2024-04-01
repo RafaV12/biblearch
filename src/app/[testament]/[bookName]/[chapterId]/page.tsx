@@ -43,7 +43,7 @@ export default function Page({
 					))}
 				</ul>
 			</div>
-			<ToolBar amountOfChapters={chapter.verses.length} />
+			<ToolBar amountOfChapters={book.chapters.length} />
 		</main>
 	) : (
 		<>No chapter found</>

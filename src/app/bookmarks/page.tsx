@@ -84,8 +84,10 @@ export default function Page() {
 		<main className='py-10 px-4 mx-auto min-h-screen max-w-screen-lg flex flex-col gap-8'>
 			<button
 				onClick={() => {
-					localStorage.setItem('bookmarks', JSON.stringify([]));
-					setBookmarks([]);
+					if (bookmarks && bookmarks.length > 0) {
+						localStorage.setItem('bookmarks', JSON.stringify([]));
+						setBookmarks([]);
+					}
 				}}
 				className='px-4 py-2 w-fit md:self-end bg-black rounded-md text-white text-sm font-semibold'
 			>
