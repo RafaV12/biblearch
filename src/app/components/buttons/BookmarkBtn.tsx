@@ -63,7 +63,7 @@ export default function BookmarkBtn({ bookmark }: { bookmark: Bookmark }) {
 		<button
 			onClick={bookmarkChapter}
 			title={isChapterBookmarked ? 'Unbookmark Chapter' : 'Bookmark Chapter'}
-			className='p-2 border rounded-full hover:bg-slate-100'
+			className='p-2 border rounded-md bg-white shadow hover:bg-slate-100'
 		>
 			{isChapterBookmarked ? <BookmarkedIcon /> : <AddBookmarkIcon />}
 		</button>
