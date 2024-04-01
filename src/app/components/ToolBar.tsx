@@ -20,7 +20,7 @@ export default function ToolBar({ amountOfChapters }: ToolBarProps) {
 		// Genesis 1
 		title: pathname.split('/').slice(2, 4).join('/').replace('/', ' '),
 		// Genesis/1
-		url: pathname.split('/').slice(2, 4).join('/'),
+		url: pathname,
 	};
 
 	return (

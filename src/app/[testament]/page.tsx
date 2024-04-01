@@ -98,7 +98,6 @@ const newTestamentBooksByTitle: BookGroup[] = [
 ];
 
 export default function Page({ params }: { params: { testament: string } }) {
-	console.log(params.testament);
 	let testamentBooks;
 	if (params.testament === 'old-testament') {
 		testamentBooks = oldTestamentBooksByTitle;
