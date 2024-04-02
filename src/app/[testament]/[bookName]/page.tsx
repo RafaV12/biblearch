@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
 
 import { BookShortVersion } from '@/app/types';
 
@@ -20,7 +21,7 @@ export default function Page({
 		data = null;
 	}
 
-	if (!data) return <>Data not found</>;
+	if (!data) return notFound();
 
 	return (
 		<>

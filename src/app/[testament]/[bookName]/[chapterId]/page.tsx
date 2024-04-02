@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
 
 import { Book } from '@/app/types';
 
@@ -27,7 +28,7 @@ export default function Page({
 		book = null;
 	}
 
-	if (!book) return <>Data not found</>;
+	if (!book) return notFound();
 
 	const chapter = book.chapters.find(
 		(chapter) => chapter.id === params.chapterId

@@ -32,13 +32,13 @@ export default function Home() {
 				<div className='flex items-center gap-x-4'>
 					<Link
 						href='/old-testament'
-						className='px-6 py-2 bg-cta text-white rounded-full'
+						className='px-6 py-2 bg-cta text-white font-semibold rounded-full tracking-wider'
 					>
 						Old Testament
 					</Link>
 					<Link
 						href='/new-testament'
-						className='px-6 py-2 bg-cta text-white rounded-full'
+						className='px-6 py-2 bg-cta text-white font-semibold rounded-full tracking-wider'
 					>
 						New Testament
 					</Link>

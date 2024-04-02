@@ -37,11 +37,6 @@ export default function RootLayout({
 					<nav className=''>
 						<ul className='flex items-center gap-4 text-secondary font-semibold text-lg'>
 							<li>
-								<Link href={'/'}>
-									<SearchIcon />
-								</Link>
-							</li>
-							<li>
 								<Link href={'/bookmarks'}>
 									<Bookmarks />
 								</Link>

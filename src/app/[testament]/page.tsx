@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
 
 import { BookGroup } from '../types';
 
@@ -107,7 +108,7 @@ export default function Page({ params }: { params: { testament: string } }) {
 		testamentBooks = null;
 	}
 
-	if (!testamentBooks) return <>No testament found</>;
+	if (!testamentBooks) return notFound();
 
 	return (
 		<main className='py-10 px-4 min-h-screen mx-auto max-w-screen-lg flex flex-col md:items-center '>
