@@ -1,1 +1,28 @@
-{"name":"1-Kings","chapters":22,"versesPerChapter":[{"id":1,"amountOfVerses":53},{"id":2,"amountOfVerses":46},{"id":3,"amountOfVerses":28},{"id":4,"amountOfVerses":34},{"id":5,"amountOfVerses":18},{"id":6,"amountOfVerses":38},{"id":7,"amountOfVerses":51},{"id":8,"amountOfVerses":66},{"id":9,"amountOfVerses":28},{"id":10,"amountOfVerses":29},{"id":11,"amountOfVerses":43},{"id":12,"amountOfVerses":33},{"id":13,"amountOfVerses":34},{"id":14,"amountOfVerses":31},{"id":15,"amountOfVerses":34},{"id":16,"amountOfVerses":34},{"id":17,"amountOfVerses":24},{"id":18,"amountOfVerses":46},{"id":19,"amountOfVerses":21},{"id":20,"amountOfVerses":43},{"id":21,"amountOfVerses":29},{"id":22,"amountOfVerses":53}]}
+{
+	"name": "1-Kings",
+	"chapters": 22,
+	"versesPerChapter": [
+		{ "id": 1, "amountOfVerses": 53 },
+		{ "id": 2, "amountOfVerses": 46 },
+		{ "id": 3, "amountOfVerses": 28 },
+		{ "id": 4, "amountOfVerses": 34 },
+		{ "id": 5, "amountOfVerses": 18 },
+		{ "id": 6, "amountOfVerses": 38 },
+		{ "id": 7, "amountOfVerses": 51 },
+		{ "id": 8, "amountOfVerses": 66 },
+		{ "id": 9, "amountOfVerses": 28 },
+		{ "id": 10, "amountOfVerses": 29 },
+		{ "id": 11, "amountOfVerses": 43 },
+		{ "id": 12, "amountOfVerses": 33 },
+		{ "id": 13, "amountOfVerses": 34 },
+		{ "id": 14, "amountOfVerses": 31 },
+		{ "id": 15, "amountOfVerses": 34 },
+		{ "id": 16, "amountOfVerses": 34 },
+		{ "id": 17, "amountOfVerses": 24 },
+		{ "id": 18, "amountOfVerses": 46 },
+		{ "id": 19, "amountOfVerses": 21 },
+		{ "id": 20, "amountOfVerses": 43 },
+		{ "id": 21, "amountOfVerses": 29 },
+		{ "id": 22, "amountOfVerses": 53 }
+	]
+}

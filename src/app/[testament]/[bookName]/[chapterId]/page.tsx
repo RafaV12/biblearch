@@ -46,7 +46,7 @@ export default function Page({
 					className='mb-12 flex items-center gap-x-3 text-3xl uppercase font-semibold text-tertiary cursor-pointer tracking-widest md:text-5xl'
 				>
 					<LeftArrowIcon />
-					<h1>{params.bookName.replace('-', ' ')}</h1>
+					<h1>{params.bookName.replaceAll('-', ' ')}</h1>
 				</Link>
 
 				<div className='mb-8 flex items-center gap-3 self-start'>

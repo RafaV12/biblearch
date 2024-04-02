@@ -26,7 +26,7 @@ const oldTestamentBooksByTitle: BookGroup[] = [
 	},
 	{
 		title: 'Wisdom Literature',
-		books: ['Job', 'Psalms', 'Proverbs', 'Ecclesiastes', 'Song of Solomon'],
+		books: ['Job', 'Psalms', 'Proverbs', 'Ecclesiastes', 'Song-of-Solomon'],
 	},
 	{
 		title: 'Major Prophets',
@@ -129,7 +129,7 @@ export default function Page({ params }: { params: { testament: string } }) {
 									)}/${encodeURIComponent(innerBook)}`}
 								>
 									<li className='w-fit text-primary text-lg hover:text-cta cursor-pointer hover:underline'>
-										{innerBook.replace('-', ' ')}
+										{innerBook.replaceAll('-', ' ')}
 									</li>
 								</Link>
 							))}

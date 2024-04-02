@@ -31,7 +31,7 @@ export default function Page({
 				>
 					<LeftArrowIcon />
 					<h1 className='text-3xl uppercase font-semibold text-tertiary tracking-widest md:text-5xl'>
-						{params.bookName.replace('-', ' ')}
+						{params.bookName.replaceAll('-', ' ')}
 					</h1>
 				</Link>
 

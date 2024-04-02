@@ -1,1 +1,5 @@
-{"name":"3-John","chapters":1,"versesPerChapter":[{"id":1,"amountOfVerses":14}]}
+{
+	"name": "3-John",
+	"chapters": 1,
+	"versesPerChapter": [{ "id": 1, "amountOfVerses": 14 }]
+}
